@@ -1,17 +1,17 @@
 package com.franzandel.ilt1
 
 fun main() {
-    var x = 10
-    while (x <= 5){
+    var count = 10
+    while (count <= 5) {
         println("Hello World")
-        x++
+        count++
     }
 
-    var y = 10
+    var count2 = 10
     do {
         println("Hello Kotlin")
-        y++
-    } while (y <= 5)
+        count2++
+    } while (count2 <= 5)
 
 //Infinite Loop
 //    var z = 10

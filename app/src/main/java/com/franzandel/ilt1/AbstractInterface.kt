@@ -1,7 +1,8 @@
 package com.franzandel.ilt1
 
-abstract class Animal() {
+abstract class Animal {
     abstract val age: Int //must be overridden
+
     //initial value
     open val isEating = true //not must be overridden
     val isRespire = true //can not be overridden
@@ -21,7 +22,7 @@ class Camel : Animal(), IWalk {
     }
 }
 
-fun main(){
+fun main() {
     val camel = Camel()
     camel.walk()
 }

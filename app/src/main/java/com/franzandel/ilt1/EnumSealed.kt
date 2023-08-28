@@ -14,18 +14,18 @@ sealed class Result<out T> {
 
 class Data(val name: String)
 
-fun main(){
+fun main() {
     val data = Data("Dicoding")
 
     val status: Status = Status.SUCCESS
-    val statusMessage = when(status){
+    val statusMessage = when (status) {
         Status.SUCCESS -> println("Success")
         Status.ERROR -> println("Error")
         Status.LOADING -> println("Loading")
     }
 
     val result: Result<Data> = Result.Success(data)
-    val resultMessage = when(result){
+    val resultMessage = when (result) {
         is Result.Success -> println("Success : ${data.name}")
         is Result.Error -> println("Error")
         is Result.Loading -> println("Loading")
